@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт Портфолио</title>
+    <link rel="stylesheet" href="./dist/aos.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,7 @@
 </head>
 <body>
     <div class="header">
-        <h1 class="header-title">Галоян Давид</h1>
+        <h1 class="header-title" data-aos="flip-left">Галоян Давид</h1>
         <p class="header-subtitle">Студент БГУ им. Петровского</p>
         <div class="header-arrow">
             <img src="./img/header/down.svg" alt="ArrowDown">
@@ -75,7 +76,9 @@
                 </div>
 
                 <div class="footer-contacts footer-col">
-                    <a href="https://vk.com/dgaloian" class="footer-button">
+                    <a href="https://vk.com/dgaloian" class="footer-button" data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
                         Связаться ВКонтакте
                     </a>
                     <p>Напишите мне, чтобы заказать или узнать стоимость вашего проекта.</p>
@@ -84,5 +87,7 @@
             </div>
         </div>
     </div>
+    <script src="./dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
